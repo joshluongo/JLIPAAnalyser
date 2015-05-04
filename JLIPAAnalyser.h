@@ -1,6 +1,6 @@
 //
 //  JLIPAAnalyser.h
-//  JLIPAAnalyser - Version 1.0
+//  JLIPAAnalyser - Version 1.0.1
 //
 //  Created by Joshua Luongo on 1/05/2015.
 //  Copyright (c) 2015 Josh Luongo (JR Apps). All rights reserved.
@@ -38,9 +38,14 @@
 @property (nonatomic, copy) NSURL *url;
 
 /**
- The short name of the IPA.
- */
+ The bundle name of the IPA.
+*/
 @property (nonatomic, copy) NSString *bundleName;
+
+/**
+ The display name of the IPA.
+ */
+@property (nonatomic, copy) NSString *bundleDisplayName;
 
 /**
  The bundle identifer of the IPA.

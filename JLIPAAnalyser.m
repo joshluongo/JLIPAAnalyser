@@ -1,6 +1,6 @@
 //
 //  JLIPAAnalyser.m
-//  JLIPAAnalyser - Version 1.0
+//  JLIPAAnalyser - Version 1.0.1
 //
 //  Created by Joshua Luongo on 1/05/2015.
 //  Copyright (c) 2015 Josh Luongo (JR Apps). All rights reserved.
@@ -101,7 +101,8 @@
 
     JLAppInfo *info = [JLAppInfo new];
     
-    info.bundleName = infoPlist[@"CFBundleDisplayName"];
+    info.bundleName = infoPlist[@"CFBundleName"];
+    info.bundleDisplayName = infoPlist[@"CFBundleDisplayName"];
     info.bundleIdentifer = infoPlist[@"CFBundleIdentifier"];
     info.bundleShortVersion = infoPlist[@"CFBundleShortVersionString"];
     info.bundleBuild = infoPlist[@"CFBundleVersion"];
